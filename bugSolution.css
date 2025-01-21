@@ -1,0 +1,18 @@
+/* Solution: Ensure proper context and spacing 
+   Also, simplify nested calculations if possible  */
+
+.container {
+  width: 500px; /* Define parent width for calc() to work correctly */
+}
+
+.element {
+  width: calc(100% - 20px); /* Correct spacing around - operator */
+  height: calc( (100px + 50px) / 2 ); /*Example of simplified nested calc()*/
+}
+
+/* Alternative Solution for more complex nesting (more readable): */ 
+.element2 {
+  width: 100%;
+  margin-left:10px; /*Example of simpler alternative to nested calc()*/
+  margin-right:10px;
+} 
